@@ -4,7 +4,7 @@
 ## @brief Obtain an access token from the Google Authorization Server.
 ## @details Support the OAuth 2.0 authorization sequence and obtain an
 ## access token from the Google Authorization Server.  For more
-## details, see: https://github.com/carmine560/blogger-posts
+## details, see: https://github.com/carmine560/google-oauth-token
 
 set -o pipefail
 curl_options=-fSs
