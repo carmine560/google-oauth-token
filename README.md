@@ -29,7 +29,7 @@ Make sure that Bash can find both the scripts in the directories of
 the `PATH`.  For example:
 
 ``` shell
-PATH=$HOME/path/to/blogger-posts:$PATH
+PATH=$HOME/path/to/google-oauth-token:$PATH
 ```
 
 or
