@@ -2,6 +2,8 @@
 
 <!-- Bash script that supports OAuth sequence and obtains token from Google Authorization Server -->
 
+<!-- bash curl gnupg jq oauth2 -->
+
 A Bash script that supports the OAuth 2.0 authorization sequence and
 obtains an access token from the Google Authorization Server.
 
