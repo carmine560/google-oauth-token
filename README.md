@@ -76,12 +76,11 @@ curl -H "Authorization: Bearer $access_token" ... $GOOGLE_API_ENDPOINT
 
 ### Options ###
 
-  * `-C` returns an authorization URL for an authorization code.
-  * `-T` stores an access token and a refresh token.
-  * `-r` refreshes the access token.
-  * `-i` displays the status of the access token in JSON if it is
-    valid.
-  * `-a` refreshes the access token if it is expired and returns it.
+  * `-C` return an authorization URL for an authorization code
+  * `-T` store an access token and a refresh token
+  * `-r` refresh the access token
+  * `-i` display the status of the access token in JSON if it is valid
+  * `-a` refresh the access token if it is expired and return it
 
 ## License ##
 

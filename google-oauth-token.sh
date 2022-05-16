@@ -88,8 +88,8 @@ Usage: ${0##*/} [+-CTria}
   -C    return an authorization URL for an authorization code
   -T    store an access token and a refresh token
   -r    refresh the access token
-  -i    display the status of the access token
-  -a    return the access token
+  -i    display the status of the access token in JSON if it is valid
+  -a    refresh the access token if it is expired and return it
 EOF
             exit 2
     esac
