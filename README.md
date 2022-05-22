@@ -88,6 +88,6 @@ curl -H "Authorization: Bearer $access_token" ... $GOOGLE_API_ENDPOINT
 
 ## Links ##
 
-  * [Bash Scripting to Obtain Access Token from Google Authorization
-    Server](https://carmine560.blogspot.com/2021/04/bash-scripting-to-obtain-access-token.html):
+  * [*Bash Scripting to Obtain Access Token from Google Authorization
+    Server*](https://carmine560.blogspot.com/2021/04/bash-scripting-to-obtain-access-token.html):
     a blog post for more details.
