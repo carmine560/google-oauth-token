@@ -37,8 +37,13 @@ got_store_tokens() {
                    -X POST $curl_options $TOKEN_ENDPOINT |
                   jq -r '.access_token, .refresh_token' |
                   paste - -) || exit
-    ec_set_value access_token $access_token \
-                            refresh_token $refresh_token
+    if [ -z "$access_token" -a -z "$refresh_token" ]; then
+        echo access_token and refresh_token are zero >&2
+        exit 1
+    else
+        ec_set_value access_token $access_token \
+                     refresh_token $refresh_token
+    fi
 }
 
 ## @fn got_refresh_access_token()
@@ -50,7 +55,12 @@ got_refresh_access_token() {
                         -d refresh_token=$refresh_token \
                         -X POST $curl_options $TOKEN_ENDPOINT |
                        jq -r .access_token) || exit
-    ec_set_value access_token $access_token
+    if [ -z "$access_token" ]; then
+        echo access_token is zero >&2
+        exit 1
+    else
+        ec_set_value access_token $access_token
+    fi
 }
 
 ## @fn got_display_status()
