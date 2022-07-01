@@ -37,7 +37,8 @@ got_store_tokens() {
                    -X POST $curl_options $TOKEN_ENDPOINT |
                   jq -r '.access_token, .refresh_token' |
                   paste - -) || exit
-    if [ -z "$access_token" -a -z "$refresh_token" ]; then
+    if [ -z "$access_token" -a -z "$refresh_token" ] ||
+           [ "$access_token" == null -a "$refresh_token" == null ]; then
         echo access_token and refresh_token are zero >&2
         exit 1
     else
